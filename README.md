@@ -1,11 +1,9 @@
-안녕하세요 진혁입니다!
-
-# Java MVC 패턴 Project-LUBLE
-MVC 패턴을 활용한 신발 경매 웹 사이트
-
----
+# 안녕하세요 진혁입니다! :boy:
 
 # 프로젝트 소개
+
+MVC 패턴을 활용한 신발 경매 웹 사이트
+
 루블은 구매자 , 판매자 모두 경매를 통해 원하는 값에 거래가 가능한 웹 사이트 입니다.
 
 프로젝트 시작은 중고거래 사기 , 특히나 리셀시장 가품으로 인한 피해를 해결해 보고자 시작 하였습니다.
@@ -15,9 +13,24 @@ MVC 패턴을 활용한 신발 경매 웹 사이트
 
 ---
 
-## Team
+## 정보
 - Team Leader : SungWon Cho (유저페이지 전체)
 - Team members : JinHuck Heo (유저 마이페이지, 찜,회원수정, 관리자페이지 전체)
+
+### 개발 기간
+
+- 2023-11-20 ~ 2023-12-20
+
+### 기술 스택 및 개발 환경
+
+- HTML
+- CSS
+- TailWind
+- Mysql
+- Apache
+- Java 8
+- JDK 1.8.0
+- Eclips IDE
 
 ---
 
@@ -44,19 +57,8 @@ MVC 패턴을 활용한 신발 경매 웹 사이트
 
 ---
 
-## 개발 환경 및 기술 스택
-- Java 8
-- JDK 1.8.0
-- Eclips IDE
-- HTML
-- CSS
-- TailWind
-- Mysql
-- Apache
 
----
-
-# 결과 화면
+# 유저 결과 화면
 
 ### 회원가입 페이지 ID,PASS 중복 불가 체크
 
@@ -78,5 +80,27 @@ MVC 패턴을 활용한 신발 경매 웹 사이트
 ### 판매 내역 페이지  (가격이 높아 판매가 안된다면 판매가격을 낮출 수 있다)
 
 ![6](https://github.com/HeoJinHuck/LUBLE/assets/138653275/dd0826aa-0c32-4569-bedd-a35890d1bf9d)
+
+
+---
+
+# 관리자 결과 화면
+
+### 유저가 상품을 판매했을시 오프라인으로 배송된 택배를 확인함
+
+![8](https://github.com/HeoJinHuck/LUBLE/assets/138653275/c2e74302-7fd4-4841-a22f-e736d632eeaf)
+
+### 배송을 확인하면 검수페이지에서 가품인지 체크를 한다
+
+![9](https://github.com/HeoJinHuck/LUBLE/assets/138653275/a5eb01a5-7ebc-4bf5-a5e8-996b30e98dcc)
+
+### 진품이 확인 됬다면 판매 중으로 바뀌고 유저페이지 신발 리스트에 나타나게 된다.
+
+![10](https://github.com/HeoJinHuck/LUBLE/assets/138653275/01e9ccb0-54f8-4b38-9744-37174e8e752d)
+
+### 가품인것으로 확인 된다면 유저 주소로 반송 처리
+
+![11](https://github.com/HeoJinHuck/LUBLE/assets/138653275/5bbe1461-0a09-429f-9065-950ebe2e2f08)
+
 
 
