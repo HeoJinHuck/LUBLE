@@ -1,0 +1,13 @@
+<Context>
+	<Resource name="jdbc/mySQLDB"
+	auth="Container"
+	type="javax.sql.DataSource"
+	username="sdt23ljh"
+	password="sdt23ljh"
+	driverClassName="com.mysql.cj.jdbc.Driver"
+	factory="org.apache.tomcat.dbcp.dbcp2.BasicDataSourceFactory"
+	url="jdbc:mysqL://118.131.179.138/sdt23ljh"
+	maxActive="500"
+	maxIdle="100"
+	/>
+</Context>
