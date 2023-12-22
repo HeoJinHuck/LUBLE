@@ -384,8 +384,8 @@ public class AdminDAO {
 		PreparedStatement pstmt = null;
 		ResultSet rs = null;
 
-		String sql = "select o.ordernum,s.price\r\n" + "from ordertable o\r\n" + "inner join shoesinfo s\r\n"
-				+ "on o.shonum=s.shonum\r\n" + "where status=3";
+		String sql = "select o.ordernum,s.price from ordertable inner join shoesinfo "
+				+ "on o.shonum=s.shonum where status=3";
 
 		try {
 			pstmt = con.prepareStatement(sql);
@@ -514,7 +514,6 @@ public class AdminDAO {
 	public String ShowNumber4() { // 전체 배송중인 상품의 pass 값 조회
 		PreparedStatement pstmt = null;
 		ResultSet rs = null;
-
 		String showNumber4 = null;
 
 		String sql = "SELECT count(model) FROM shoesinfo WHERE pass = 4 AND ispurchase = 'n'";
@@ -537,8 +536,9 @@ public class AdminDAO {
 	public String getAdminEmail(String id) {
 		PreparedStatement pstmt = null;
 		ResultSet rs = null;
-		String sql = "select email from userinfo where userid=?";
 		String email = null;
+		String sql = "select email from managerinfo where id=?";
+		
 		try {
 			pstmt = con.prepareStatement(sql);
 			pstmt.setString(1, id);
@@ -646,5 +646,4 @@ public class AdminDAO {
 
 		return deliteuploadshoes;
 	}
-
 }

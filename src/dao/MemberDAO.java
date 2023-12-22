@@ -167,7 +167,6 @@ public class MemberDAO {
 		String sql = "select count(userid) as buy from ordertable where userid=? and status=?";
 		PreparedStatement pstmt = null;
 		ResultSet rs = null;
-		boolean a = false;
 		try {
 			for (int i = 0; i <= 2; i++) {
 				pstmt = con.prepareStatement(sql);
