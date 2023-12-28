@@ -104,7 +104,7 @@ String id = (String)request.getAttribute("id");
     <!-- Main Content -->
     	 
     <main class="container mx-auto px-6 py-12 flex flex-col items-center">
-        <h1 class="text-3xl font-bold mb-8">KREAM</h1>
+        <h1 class="text-3xl font-bold mb-8">LUBLE</h1>
         
         <form action="./adminLogin.ad" name="login" method="post"  class="w-full max-w-sm space-y-6">
   			<label for="id" class="block text-gray-700 text-sm font-bold mb-2">아이디:</label>
