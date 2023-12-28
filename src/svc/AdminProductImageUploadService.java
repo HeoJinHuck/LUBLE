@@ -24,11 +24,12 @@ public class AdminProductImageUploadService {
 				commit(con);
 			} else {
 				rollback(con);
-				close(con);
 			}
 		} catch (Exception e) 
 		{
 			e.printStackTrace();
+		}finally {
+			close(con);
 		}
 		return joinSuccess;
 	}

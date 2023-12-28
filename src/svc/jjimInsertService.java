@@ -32,6 +32,8 @@ public class jjimInsertService {
 		catch (Exception e) 
 		{
 			e.printStackTrace();
+		}finally {
+			close(con);
 		}
 		return isInsertSuccess;
 	}

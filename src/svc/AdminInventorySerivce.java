@@ -12,17 +12,19 @@ public class AdminInventorySerivce {
 	public ArrayList<ShoseInfo> getAllInventory(String search) 
 			throws Exception {
 		ArrayList<ShoseInfo> AllInventoryListSuccess = null;
+		Connection con= null;
 		try 
 		{
-		Connection con=getConnection();
+		con=getConnection();
 		AdminDAO adminDAO=AdminDAO.getInstance();
 		adminDAO.setConnection(con);
 		AllInventoryListSuccess=adminDAO.SelectAllInventory(search);
-		close(con);
 		}
 		catch(Exception e) 
 		{
 		 e.printStackTrace();	
+		}finally{
+			close(con);
 		}
 		return AllInventoryListSuccess;
 	}

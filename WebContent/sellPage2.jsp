@@ -190,7 +190,7 @@ input {
   flex-direction: column;
   padding: 0 40px;
   text-align: center;
-  top: 0;
+  top: auto;
   height: 100%;
   width: 50%;
   transform: translateX(0);
@@ -231,8 +231,6 @@ input {
 
 </style>
 <body>
-
-<jsp:include page="header.jsp"></jsp:include>
 
 <div class="container" id="container">
   <div class="form-container sign-up-container">
@@ -303,8 +301,6 @@ input {
     </div>
   </div>
 </div>
-
-<jsp:include page="footer.jsp"></jsp:include>
 
 <script>
 const signUpButton = document.getElementById('signUp');

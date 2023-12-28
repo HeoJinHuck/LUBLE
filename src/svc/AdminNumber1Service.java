@@ -5,8 +5,6 @@ package svc;
 import java.sql.Connection;
 import static db.JdbcUtil.*;
 import dao.AdminDAO;
-import dao.MemberDAO;
-
 public class AdminNumber1Service {
 
 	
@@ -84,15 +82,15 @@ public class AdminNumber1Service {
 				return ShowReturn;
 			}
 
-	public String getEmail(String id) {
+	public String getAdminEmail(String id) {
 		Connection con=null;
 		String email = null;
 		try {
 			con = getConnection();
-			MemberDAO memberDAO = MemberDAO.getInstance();
-			memberDAO.setConnection(con);
-			email = memberDAO.getEmail(id);
-			
+			AdminDAO adminDAO = AdminDAO.getInstance();
+			adminDAO.setConnection(con);
+			email = adminDAO.getAdminEmail(id);
+
 		} catch (Exception e) {
 			e.printStackTrace();
 		}finally {

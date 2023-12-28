@@ -30,7 +30,9 @@ public class DeliveryManagerService {
 		{
 			e.printStackTrace();
 			con.rollback();
-		} 
+		} finally {
+			close(con);
+		}
 		return DeliverySuccess;
 	}
 }

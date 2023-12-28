@@ -228,35 +228,10 @@ input {
   width: 40px;
 }
 
-footer {
-    background-color: #222;
-    color: #fff;
-    font-size: 14px;
-    bottom: 0;
-    position: fixed;
-    left: 0;
-    right: 0;
-    text-align: center;
-    z-index: 999;
-}
-
-footer p {
-    margin: 10px 0;
-}
-
-footer i {
-    color: red;
-}
-
-footer a {
-    color: #3c97bf;
-    text-decoration: none;
-}
 </style>
+
+
 <body>
-
-
-<jsp:include page="header.jsp"></jsp:include>
 
 <div class="container" id="container">
   <div class="form-container sign-up-container">
@@ -335,6 +310,8 @@ footer a {
   </div>
 </div>
 
+</body>
+
 
 <script>
 const signUpButton = document.getElementById('signUp');
@@ -352,5 +329,4 @@ container.classList.remove("right-panel-active");
 
 </script>
 
-</body>
 </html>

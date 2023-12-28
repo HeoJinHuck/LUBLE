@@ -9,8 +9,8 @@
 %>
     
 <html>
+ <meta charset="UTF-8">
 <head>
-    <meta charset="UTF-8">
     <title>재고 | LUBEL</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="style.css">

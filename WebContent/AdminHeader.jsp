@@ -3,12 +3,12 @@
 <%@ page import="java.sql.*"%>
 <%@ page import="javax.sql.*"%>
 <%@ page import="javax.naming.*"%>
+<meta charset="UTF-8">
 <html>
 <head>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 <script src="https://cdn.tailwindcss.com"></script>
-<meta charset="UTF-8">
     <style>
 body {
             margin: 0;

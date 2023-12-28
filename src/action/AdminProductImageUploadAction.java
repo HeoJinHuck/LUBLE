@@ -1,9 +1,12 @@
 package action;
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
+
 import svc.AdminProductUploadService;
 import java.util.Enumeration;
+
 import javax.servlet.ServletContext;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
 import com.oreilly.servlet.MultipartRequest;
 import com.oreilly.servlet.multipart.DefaultFileRenamePolicy;
 import vo.ActionForward;
@@ -11,7 +14,6 @@ import vo.ShoseInfo;
 
 public class AdminProductImageUploadAction implements Action {
 	
-
 	@Override
 	public ActionForward execute(HttpServletRequest request, HttpServletResponse response) throws Exception {
 	
@@ -54,6 +56,7 @@ public class AdminProductImageUploadAction implements Action {
 		ActionForward forward = new ActionForward("AdminProductUpload.jsp",false);
 		return forward;
 	}
+
 
 
 }

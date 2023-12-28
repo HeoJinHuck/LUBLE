@@ -25,7 +25,9 @@ public class MemberLoginService {
 			}
 		} catch (Exception e) {
 			e.printStackTrace();
-		} 
+		}finally {
+			close(con);
+		}
 		return loginResult;
 	}
 }

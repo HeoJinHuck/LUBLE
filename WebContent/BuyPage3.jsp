@@ -7,7 +7,7 @@
 <%@ page import="java.text.SimpleDateFormat"%>
 
 <%
-	ShoseInfo shoesinfo = (ShoseInfo) request.getAttribute("shoesinfo");
+ShoseInfo shoesinfo = (ShoseInfo) request.getAttribute("shoesinfo");
 userinfo userinfo = (userinfo) request.getAttribute("userinfo");
 %>
 <html lang="ko">

@@ -7,10 +7,8 @@
 <!-- 12-14 수정  -->
 <html>
 <head>
-<link
-	href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@700&display=swap"
-	rel="stylesheet">
 <meta charset="UTF-8">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@700&display=swap" rel="stylesheet">
 <style>
 body {
 	margin: 0;

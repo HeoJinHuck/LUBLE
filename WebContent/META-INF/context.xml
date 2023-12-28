@@ -6,7 +6,7 @@
 	password="sdt23ljh"
 	driverClassName="com.mysql.cj.jdbc.Driver"
 	factory="org.apache.tomcat.dbcp.dbcp2.BasicDataSourceFactory"
-	url="jdbc:mysqL://118.131.179.138/sdt23ljh"
+	url="jdbc:mysqL://118.131.179.138/sdt23ljh?serverTimezone=Asia/Seoul"
 	maxActive="500"
 	maxIdle="100"
 	/>

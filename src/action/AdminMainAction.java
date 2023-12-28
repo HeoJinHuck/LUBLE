@@ -14,9 +14,8 @@ public class AdminMainAction implements Action { // 관리자 외  아이디들�
 			throws Exception {
 		HttpSession session = request.getSession();
 		String id = (String) session.getAttribute("id");
-		
 		AdminNumber1Service adminNumber1Service = new AdminNumber1Service();
-
+		
 		ActionForward forward = null;
 		if(id==null) 
 		{
@@ -29,7 +28,7 @@ public class AdminMainAction implements Action { // 관리자 외  아이디들�
 		String ShowCheck = adminNumber1Service.ShowNumber2();
 		String ShowSelling = adminNumber1Service.ShowNumber3();
 		String ShowReturn = adminNumber1Service.ShowNumber4();
-		String email = adminNumber1Service.getEmail(id);
+		String email =adminNumber1Service.getAdminEmail(id);
 		
 		request.setAttribute("delivery", ShowDelivery);
 		request.setAttribute("check", ShowCheck);
@@ -37,7 +36,6 @@ public class AdminMainAction implements Action { // 관리자 외  아이디들�
 		request.setAttribute("return", ShowReturn);
 		request.setAttribute("email", email);
 		request.setAttribute("id", id);
-		
 		forward = new ActionForward("AdminTest.jsp", false);
 		}
 		return forward;

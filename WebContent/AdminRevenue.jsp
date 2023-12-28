@@ -7,8 +7,8 @@
 %>
 <html>
 <head>
+<meta charset="UTF-8">
     <link rel="stylesheet" href="style.css">
-    <meta charset="UTF-8">
     <title>수익 | LUBLE</title>
 </head>
 

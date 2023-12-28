@@ -25,12 +25,13 @@ public class AdminStatusUpdate23Service {
 			} else 
 			{
 				rollback(con);
-				close(con);
 			} 
 		} catch (Exception e) 
 		{
 			e.printStackTrace();
 			rollback(con);
+		}finally {
+			close(con);
 		}
 		return AdminStatus23Success;
 	}

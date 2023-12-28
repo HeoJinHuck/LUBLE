@@ -25,6 +25,7 @@ public class MyPageService {
 		}
 		return sell;
 	}
+	
 	public int[] getOrder(String id) {
 		int order[]=new int[3];
 		Connection con=null;
@@ -51,11 +52,12 @@ public class MyPageService {
 			MemberDAO memberDAO=MemberDAO.getInstance();
 			memberDAO.setConnection(con);
 			email = memberDAO.getEmail(id);
-			close(con);
 		}catch (Exception e) 
 		{
 			e.printStackTrace();
-		} 
+		}finally {
+			close(con);
+		}
 		return email;
 	}
 

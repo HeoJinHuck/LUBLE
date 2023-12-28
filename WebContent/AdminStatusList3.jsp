@@ -12,6 +12,7 @@
 <html>
 <head>
 <title>검수 중 | LUBLE</title>
+    <meta charset="UTF-8">
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="style.css">
     <title>배송 중 인 상품 리스트</title>

@@ -30,6 +30,8 @@ public class AdminMemberDeleteService {
 			} catch (Exception e) 
 			{
 			e.printStackTrace();
+			}finally {
+				close(con);
 			}
 		return AdminMemberDeleteSuccess;
 	}

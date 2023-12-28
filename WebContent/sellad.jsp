@@ -53,10 +53,12 @@
     </style>
 </head>
 <body class="bg-gray-100">
+
+<jsp:include page="header.jsp"></jsp:include>
+       
 <form action="adjustsho.sho" method="post">
     <div class="container mx-auto p-4">
-	<jsp:include page="header.jsp"></jsp:include>
-        <div class="bg-white p-4 rounded-md shadow-md mb-6">
+	 <div class="bg-white p-4 rounded-md shadow-md mb-6">
            
            <div class="bg-white p-4 shadow rounded-lg">
             <div class="flex items-center space-x-4">

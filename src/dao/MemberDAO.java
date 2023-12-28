@@ -123,8 +123,8 @@ public class MemberDAO {
 		} catch (Exception e) {
 			System.out.println("주소 가져오기 실패: " + e);
 		} finally {
-			close(pstmt);
 			close(rs);
+			close(pstmt);
 		}
 		return addr;
 	}
@@ -156,8 +156,8 @@ public class MemberDAO {
 		} catch (Exception e) {
 			System.out.println("판매 수량 가져오기 실패: " + e);
 		} finally {
-			close(pstmt);
 			close(rs);
+			close(pstmt);
 		}
 		return sell;
 	}
@@ -167,7 +167,6 @@ public class MemberDAO {
 		String sql = "select count(userid) as buy from ordertable where userid=? and status=?";
 		PreparedStatement pstmt = null;
 		ResultSet rs = null;
-		boolean a = false;
 		try {
 			for (int i = 0; i <= 2; i++) {
 				pstmt = con.prepareStatement(sql);
@@ -181,8 +180,9 @@ public class MemberDAO {
 		} catch (Exception e) {
 			System.out.println("구매 수량 가져오기 실패: " + e);
 		} finally {
-			close(pstmt);
 			close(rs);
+			close(pstmt);
+			
 		}
 		return buy;
 	}
@@ -202,8 +202,9 @@ public class MemberDAO {
 		} catch (Exception e) {
 			System.out.println("구매 수량 가져오기 실패: " + e);
 		} finally {
-			close(pstmt);
 			close(rs);
+			close(pstmt);
+			
 		}
 		return email;
 	}

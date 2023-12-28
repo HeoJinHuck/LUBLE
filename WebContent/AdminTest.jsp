@@ -3,7 +3,7 @@
     <%@ page import="java.util.*"%>
 	<%@ page import="java.text.SimpleDateFormat"%>
     <%
-    	String email=(String)request.getAttribute("email"); // 프로필 이메일 
+    	String email=(String)request.getAttribute("email");
 		String id=(String)request.getAttribute("id"); // 프로필 아이디
 		String shownumber1=(String)request.getAttribute("delivery"); // 배송 갯수
 		String shownumber2=(String)request.getAttribute("check"); // 검수 갯수
@@ -13,6 +13,7 @@
     
 <html lang="ko">
 <head>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>단, 한명의 위한 신발| LUBLE</title>
    	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap" rel="stylesheet">
@@ -39,7 +40,7 @@
                     <div class="flex items-center gap-4 mb-4">
                         <div>
                             <div class="font-bold text-lg"><%=id%></div>
-                            <div class="text-sm"><%=email %></div>
+                            <div class="text-sm"><%=email%></div>
                             <a href="#" class="text-blue-600 text-sm hover:underline">프로필 관리</a>
                         </div>
                     </div>

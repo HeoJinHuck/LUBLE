@@ -24,12 +24,13 @@ public class AdminStatusUpdate12Service {
 			} else 
 			{
 				rollback(con);
-				close(con);
 			} 
 		} catch (Exception e) 
 		{
 			e.printStackTrace();
 			rollback(con);
+		}finally {
+			close(con);
 		}
 		return AdminStatus12Success;
 	}

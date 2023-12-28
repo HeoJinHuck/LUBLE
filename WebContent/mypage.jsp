@@ -22,8 +22,8 @@
             <ul class="bg-white shadow rounded-lg p-4">
                 <li class="py-2 text-gray-700 font-semibold  text-2xl">쇼핑 정보</li>
                 <li><a href="mybuyList.my" class="py-2 text-gray-500 hover:text-gray-700 cursor-pointer">구매 내역</a></li>
+                <li><a href="mysellList.my?sell=yes" class="py-2 text-gray-500 hover:text-gray-700 cursor-pointer">판매 완료</a></li>  
                 <li><a href="mysellList.my?sell=no" class="py-2 text-gray-500 hover:text-gray-700 cursor-pointer">판매 중 상품</a></li>
-                <li><a href="mysellList.my?sell=yes" class="py-2 text-gray-500 hover:text-gray-700 cursor-pointer">판매 완료</a></li>
                 <li><a href="myjjimList.my" class="py-2 text-gray-500 hover:text-gray-700 cursor-pointer">찜한 상품</a></li>
               	
               	<li class="py-2 text-gray-700 font-semibold text-2xl">내 정보</li>

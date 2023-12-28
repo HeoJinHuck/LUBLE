@@ -11,6 +11,7 @@
 <html lang="ko">
 <head>
 <title>사이즈 선택 | LUBLE</title>
+<meta charset="UTF-8">
  <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="bg-gray-100">

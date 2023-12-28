@@ -98,6 +98,7 @@ public class MarkDAO {
 		} catch (Exception ex) {
 			System.out.println("찜 목록 업데이트 실패  : " + ex);
 		} finally {
+			close(rs);
 			close(pstmt);
 		}
 		return isUpdate;
