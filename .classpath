@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <classpath>
-	<classpathentry kind="src" path="src"/>
+	<classpathentry excluding="controller/|controller/AdminFrontController.java|controller/MemberFrontController.java|controller/MypageFrontController.java|controller/ShoseFrontController.java" kind="src" path="src"/>
 	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/cos.jar"/>
 	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/mysql-connector-j-8.1.0.jar"/>
 	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.web.container"/>

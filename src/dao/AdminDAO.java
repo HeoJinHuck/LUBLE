@@ -384,9 +384,9 @@ public class AdminDAO {
 		PreparedStatement pstmt = null;
 		ResultSet rs = null;
 
-		String sql = "select o.ordernum,s.price from ordertable inner join shoesinfo "
+		String sql = "select o.ordernum,s.price "
+				+ "from ordertable o inner join shoesinfo s "
 				+ "on o.shonum=s.shonum where status=3";
-
 		try {
 			pstmt = con.prepareStatement(sql);
 			rs = pstmt.executeQuery();
