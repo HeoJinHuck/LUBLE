@@ -227,7 +227,10 @@ input {
   height: 40px;
   width: 40px;
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> 13e21e7e5747684ba2fa6b83006b2a12421a43c9
 </style>
 
 
@@ -329,4 +332,9 @@ container.classList.remove("right-panel-active");
 
 </script>
 
+<<<<<<< HEAD
 </html>
+=======
+</body>
+</html>
+>>>>>>> 13e21e7e5747684ba2fa6b83006b2a12421a43c9
